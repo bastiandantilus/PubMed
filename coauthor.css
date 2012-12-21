@@ -19,10 +19,11 @@ h1 {
 span {
 	display: inline-block;
 	width: 150px;
+	text-align: right;
 }
 
 #coauthors div {
-	padding: 10px;
+	/* padding: 10px; */
 }
 
 button {

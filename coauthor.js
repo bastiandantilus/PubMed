@@ -20,7 +20,7 @@ $('submiter').observe("click", function(event) {
 function display_coauthors(json) {
 	//console.log(json);
 	authors = Object.keys(json);
-	authors = authors.sortBy(function(author) { return json[author]; }).reverse();
+	authors = authors.sortBy(function(author) { return json[author]; }).reverse().slice(0,10);
 	authors.each( function(author) { 
 		console.log(author);
 		//var div = template.evalute(author);
