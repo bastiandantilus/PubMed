@@ -13,7 +13,7 @@
 		<div id="container">
 			<div class="header">
 				<label for="Author">Author</label>
-				<input type="text" value="" id="Author" name="Author"/>	
+				<input type="text" value="Christopher Cannon" id="Author" name="Author"/>	
 				<button type="submit" id='submiter'>&gt;</button>
 			</div>
 			<div id="coauthors">
