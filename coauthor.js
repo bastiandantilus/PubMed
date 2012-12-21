@@ -2,7 +2,7 @@
 var pubmed_author_search = "http://localhost/PubMed/pubmed.php";
 
 $('submiter').observe("click", function(event) {
-	console.log($('Author').value);
+	//console.log($('Author').value);
 	$('submiter').disabled = "disabled";
 	
 	var request = new Ajax.Request(pubmed_author_search, {
@@ -22,7 +22,7 @@ function display_coauthors(json) {
 	authors = Object.keys(json);
 	authors = authors.sortBy(function(author) { return json[author]; }).reverse().slice(0,10);
 	authors.each( function(author) { 
-		console.log(author);
+		//console.log(author);
 		//var div = template.evalute(author);
 		var div = "<div><span>"+author+"</span><span>"+json[author]+"</span></div>";
 		//console.log(div);
